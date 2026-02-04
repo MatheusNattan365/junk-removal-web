@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junk Removal Hamilton, Burlington, Oakville | The Junk Company</title>
+  <meta name="description" content="Fast, full-service junk removal in Hamilton, Burlington, Oakville, Milton, Mississauga & surrounding areas. We haul, clean up, and donate/recycle first.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#453730',
+            'primary-dark': '#3a2e28',
+            accent: '#f97316',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "The Junk Company",
+    "description": "Fast, full-service junk removal serving Hamilton, Burlington, Oakville, Milton, Mississauga and surrounding areas.",
+    "url": "https://thejunkcompany.ca",
+    "telephone": "+1-XXX-XXX-XXXX",
+    "email": "info@thejunkcompany.ca",
+    "areaServed": ["Hamilton", "Burlington", "Oakville", "Milton", "Mississauga"],
+    "openingHours": "Mo-Su 07:00-20:00",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
+                  linear-gradient(135deg, #d4c4b5 0%, #e8ddd0 100%);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- Sticky Navigation -->
+  <nav class="fixed top-0 left-0 right-0 bg-primary shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-1">
+        <span class="font-bold text-xl text-white">The Junk</span>
+        <span class="font-bold text-xl text-accent">Company</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#" class="text-white hover:text-accent transition">Home</a>
+        <a href="#services" class="text-white hover:text-accent transition">Services We Offer</a>
+        <a href="#pricing" class="text-white hover:text-accent transition">Pricing</a>
+        <a href="#contact" class="text-white hover:text-accent transition">Contact Us</a>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="hidden md:inline-flex border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-5 py-2 transition">
+        Book now
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-white" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-primary border-t border-primary-dark px-4 py-4">
+      <div class="flex flex-col gap-3">
+        <a href="#" class="text-white hover:text-accent py-2">Home</a>
+        <a href="#services" class="text-white hover:text-accent py-2">Services We Offer</a>
+        <a href="#pricing" class="text-white hover:text-accent py-2">Pricing</a>
+        <a href="#contact" class="text-white hover:text-accent py-2">Contact Us</a>
+        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-5 py-3 text-center mt-2 transition">
+          Book now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary pt-24 pb-16 md:pt-32 md:pb-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="text-white">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            Fast, full-service junk removal—done right.
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-300 mb-8">
+            We haul it away and clean up after. Serving Hamilton, Burlington, Oakville, Milton, Mississauga & nearby areas.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <a href="#contact" class="bg-white text-primary hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg text-center transition shadow-lg">
+              Get a Free Quote
+            </a>
+            <a href="tel:+1XXXXXXXXXX" class="border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-8 py-4 rounded-lg text-lg text-center transition">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>Call Now
+            </a>
+          </div>
+
+          <!-- Value Chips -->
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <i data-lucide="clock" class="w-4 h-4 inline mr-1"></i>Same-day available
+            </span>
+            <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <i data-lucide="users" class="w-4 h-4 inline mr-1"></i>Full-service
+            </span>
+            <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <i data-lucide="recycle" class="w-4 h-4 inline mr-1"></i>Donate & recycle first
+            </span>
+          </div>
+        </div>
+
+        <div class="hidden md:block">
+          <div class="bg-white/10 rounded-2xl p-4 backdrop-blur">
+            <img
+              src="https://images.unsplash.com/photo-1519668106955-a24e5f67f8c5?w=600&h=400&fit=crop&q=80"
+              alt="Junk removal service"
+              class="rounded-xl w-full h-72 object-cover shadow-lg"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas Strip -->
+  <section class="bg-gray-100 py-12 border-y border-gray-200">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10 text-primary">
+        Proudly Servicing Hamilton, Burlington, Oakville, Milton, Mississauga, and Surrounding Areas!
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="recycle" class="w-7 h-7 text-accent"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-2">Sustainable Disposal</h3>
+          <p class="text-gray-600">Recycle, Donate and Dispose</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="heart" class="w-7 h-7 text-accent"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-2">Donations</h3>
+          <p class="text-gray-600">Donating is our priority at The Junk Company</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="clock" class="w-7 h-7 text-accent"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-2">Same Day Service</h3>
+          <p class="text-gray-600">Exceptional customer service with same day pickups</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What We Haul Away</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          From single items to full cleanouts—we handle it all with care.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service Card 1 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Household Junk Removal</h3>
+          <p class="text-gray-600">General clutter, old belongings, and miscellaneous items from any room.</p>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="sofa" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Furniture Removal</h3>
+          <p class="text-gray-600">Couches, beds, tables, chairs, dressers—we do all the heavy lifting.</p>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="refrigerator" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Appliance Removal</h3>
+          <p class="text-gray-600">Fridges, washers, dryers, stoves, dishwashers, and more.</p>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="warehouse" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Garage & Basement Cleanouts</h3>
+          <p class="text-gray-600">Clear out years of accumulated items in one visit.</p>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="trees" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Yard Waste Removal</h3>
+          <p class="text-gray-600">Branches, brush, soil, old fencing, and landscaping debris.</p>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="hard-hat" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Renovation Debris</h3>
+          <p class="text-gray-600">Drywall, flooring, cabinets, and post-renovation cleanup.</p>
+        </div>
+
+        <!-- Service Card 7 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="building-2" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Office & Commercial</h3>
+          <p class="text-gray-600">Desks, electronics, office furniture, and equipment disposal.</p>
+        </div>
+
+        <!-- Service Card 8 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="heart-handshake" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Donation Pickups</h3>
+          <p class="text-gray-600">Items in good condition? We'll donate them for you.</p>
+        </div>
+
+        <!-- Service Card 9 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="help-circle" class="w-6 h-6 text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Not Sure?</h3>
+          <p class="text-gray-600">Just ask—chances are we can take it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-amber-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-sm">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Book an appointment with ease through our online booking system, we then arrive and provide you with a free no-obligation estimate with no hidden fees! Our pricing is based only on volume, the amount of space items take up in the trailer. We do all the work quickly and efficiently while maintaining an exceptional level of customer service.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Volume-Based Pricing</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Our pricing is based on the space your items take up in our trailer. We'll give you an upfront quote before we start.
+        </p>
+      </div>
+
+      <div class="max-w-xl mx-auto mb-12">
+        <p class="text-lg text-gray-700 mb-6 text-center">Our trailer is <strong>15.2 cubic yards</strong> in size!</p>
+
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-primary text-white">
+                <th class="py-4 px-6 text-left font-semibold">Load Size</th>
+                <th class="py-4 px-6 text-right font-semibold">Price</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-6 text-gray-700">Minimum charge</td>
+                <td class="py-4 px-6 text-right font-bold text-primary">$100 + Tax</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-6 text-gray-700">1/4 Trailer</td>
+                <td class="py-4 px-6 text-right font-bold text-primary">$200 + Tax</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-6 text-gray-700">1/2 Trailer</td>
+                <td class="py-4 px-6 text-right font-bold text-primary">$350 + Tax</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-4 px-6 text-gray-700">3/4 Trailer</td>
+                <td class="py-4 px-6 text-right font-bold text-primary">$425 + Tax</td>
+              </tr>
+              <tr class="bg-accent/10 hover:bg-accent/20 transition">
+                <td class="py-4 px-6 text-gray-800 font-semibold">Full Load</td>
+                <td class="py-4 px-6 text-right font-bold text-accent text-lg">$500 + Tax</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- What's Included -->
+      <div class="bg-amber-50 rounded-2xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">What's Included in Every Quote</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-6 h-6 text-primary flex-shrink-0 mt-0.5"></i>
+                <span>Professional labor and loading</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-6 h-6 text-primary flex-shrink-0 mt-0.5"></i>
+                <span>Cleanup and sweep of the area</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-6 h-6 text-primary flex-shrink-0 mt-0.5"></i>
+                <span>All disposal and recycling fees</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-6 h-6 text-primary flex-shrink-0 mt-0.5"></i>
+                <span>Donation drop-off when applicable</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <i data-lucide="piggy-bank" class="w-8 h-8 text-primary"></i>
+              <h4 class="text-xl font-semibold">Save on Donation Items</h4>
+            </div>
+            <p class="text-gray-600">
+              Have items in good condition? Donation pickups may qualify for a lower cost. Let us know when you book!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section id="sustainability" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-orange-100 text-primary font-semibold px-4 py-2 rounded-full mb-6">
+            <i data-lucide="leaf" class="w-5 h-5"></i>
+            Eco-Conscious Disposal
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            We donate and recycle first—landfill last.
+          </h2>
+          <p class="text-xl text-gray-600 mb-6">
+            We aim to keep as much out of the landfill as possible. Reusable items go to local charities, recyclables go to proper facilities.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i data-lucide="heart" class="w-6 h-6 text-primary flex-shrink-0 mt-0.5"></i>
+              <span><strong>Donate:</strong> Furniture, clothing, and household items in good condition</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="recycle" class="w-6 h-6 text-primary flex-shrink-0 mt-0.5"></i>
+              <span><strong>Recycle:</strong> Metals, electronics, cardboard, and plastics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="trash-2" class="w-6 h-6 text-gray-400 flex-shrink-0 mt-0.5"></i>
+              <span><strong>Dispose:</strong> Only what can't be reused or recycled</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&h=350&fit=crop&q=80"
+            alt="Hands holding plant - eco-friendly sustainable disposal"
+            class="rounded-xl w-full h-64 object-cover mb-6"
+          >
+          <p class="text-gray-600 text-center italic">
+            "We prioritize donation and recycling whenever possible."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
+        <div class="flex items-center justify-center gap-1 mb-4">
+          <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
+        </div>
+        <p class="text-gray-600">5-Star Rated Service</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Fast, friendly, and fair pricing. They cleared out my entire garage in under an hour. Highly recommend!"
+          </p>
+          <p class="font-semibold text-gray-800">— Sarah M., Burlington</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Great service! They even swept up afterwards. The team was professional and on time."
+          </p>
+          <p class="font-semibold text-gray-800">— Mike T., Hamilton</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "I loved that they donate usable items. Makes me feel better about getting rid of stuff!"
+          </p>
+          <p class="font-semibold text-gray-800">— Jennifer L., Oakville</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="flex gap-1 mb-4">
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Best junk removal experience I've had. Upfront pricing with no hidden fees. Will use again!"
+          </p>
+          <p class="font-semibold text-gray-800">— David K., Milton</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            What areas do you serve?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            We proudly serve Hamilton, Burlington, Oakville, Milton, Mississauga, and surrounding areas. Not sure if we cover your location? Just ask!
+          </div>
+        </details>
+
+        <!-- FAQ Item 2 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            How does pricing work?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            Our pricing is based on volume—the space your items take up in our trailer. We provide an upfront quote before we start, so there are no surprises. Labor, loading, cleanup, and disposal are all included.
+          </div>
+        </details>
+
+        <!-- FAQ Item 3 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            Do you provide same-day pickup?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            Yes! Same-day and next-day service is often available depending on our schedule. Contact us to check availability.
+          </div>
+        </details>
+
+        <!-- FAQ Item 4 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            What items can't you take?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            We cannot take hazardous materials (chemicals, paint, asbestos), medical waste, or certain regulated items. If you're unsure, just ask—we're happy to help find a solution.
+          </div>
+        </details>
+
+        <!-- FAQ Item 5 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            Do you donate or recycle?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            We donate and recycle whenever possible. Usable items go to local charities, and recyclables are taken to proper facilities. The landfill is always our last resort.
+          </div>
+        </details>
+
+        <!-- FAQ Item 6 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            Do I need to move items outside?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            Nope! We're full-service—we'll come inside, carry items out, and clean up after. Just point to what goes, and we'll handle the rest.
+          </div>
+        </details>
+
+        <!-- FAQ Item 7 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            Are you insured?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            Yes, we are fully licensed and insured for your peace of mind.
+          </div>
+        </details>
+
+        <!-- FAQ Item 8 -->
+        <details class="bg-white rounded-xl shadow-sm group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg">
+            How do I book?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            Easy! Fill out the contact form below, give us a call, or send us an email. We'll respond quickly with availability and a quote.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Your Free Quote</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Ready to clear the clutter? Fill out the form or give us a call.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name *</label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition">
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
+                <input type="email" id="email" name="email" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition">
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+                <input type="tel" id="phone" name="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition">
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Tell us about your junk removal needs *</label>
+              <textarea id="message" name="message" rows="4" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
+                placeholder="Describe what you need removed, location, and any other details..."></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 text-lg transition">
+              Book now
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div class="bg-amber-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+            <div class="space-y-4">
+              <a href="tel:+1XXXXXXXXXX" class="flex items-center gap-4 text-gray-700 hover:text-primary transition">
+                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                  <i data-lucide="phone" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">Call Us</p>
+                  <p class="font-semibold text-lg">XXX-XXX-XXXX</p>
+                </div>
+              </a>
+
+              <a href="mailto:info@thejunkcompany.ca" class="flex items-center gap-4 text-gray-700 hover:text-primary transition">
+                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                  <i data-lucide="mail" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">Email Us</p>
+                  <p class="font-semibold text-lg">info@thejunkcompany.ca</p>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-4 text-gray-700">
+                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                  <i data-lucide="clock" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">Hours</p>
+                  <p class="font-semibold text-lg">7:00 AM - 8:00 PM Daily</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-4">Service Areas</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-4 py-2 rounded-full text-gray-700 font-medium">Hamilton</span>
+              <span class="bg-white px-4 py-2 rounded-full text-gray-700 font-medium">Burlington</span>
+              <span class="bg-white px-4 py-2 rounded-full text-gray-700 font-medium">Oakville</span>
+              <span class="bg-white px-4 py-2 rounded-full text-gray-700 font-medium">Milton</span>
+              <span class="bg-white px-4 py-2 rounded-full text-gray-700 font-medium">Mississauga</span>
+              <span class="bg-white px-4 py-2 rounded-full text-gray-700 font-medium">& Surrounding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <!-- Logo -->
+        <div class="flex items-center gap-1">
+          <span class="font-bold text-xl text-white">The Junk</span>
+          <span class="font-bold text-xl text-accent">Company</span>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+          <p>Copyright 2020 by The Junk Company</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex items-center gap-4">
+          <a href="mailto:info@thejunkcompany.ca" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+            <i data-lucide="mail" class="w-5 h-5 text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:opacity-80 transition">
+            <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-4 md:hidden z-40">
+    <div class="flex gap-3">
+      <a href="tel:+1XXXXXXXXXX" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-4 text-center transition">
+        <i data-lucide="phone" class="w-5 h-5 inline mr-1"></i>Call
+      </a>
+      <a href="#contact" class="flex-1 bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-4 text-center transition">
+        Book now
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Add padding to body to account for sticky nav
+    document.body.style.paddingTop = '0';
+
+    // Smooth scroll offset for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+        <!-- AssistHero Smart Widget -->
+        
+        
+          <script>
+            (function() {
+              window.assistHeroWidgetConfig = {
+                widgetId: '691cc35812031c1a74f664a5',
+                type: 'bubble',
+                apiUrl: 'https://assist-hero-app-backend.onrender.com/api'
+              };
+              
+              var script = document.createElement('script');
+              script.src = 'https://assist-hero-app-backend.onrender.com/api/widgets/691cc35812031c1a74f664a5/logic?type=bubble';
+              script.async = true;
+              document.head.appendChild(script);
+            })();
+          </script>
+      
+</body>
+</html>
